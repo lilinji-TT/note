@@ -1,6 +1,6 @@
-# vue03
+# vue监视
 
-## A.监视属性：
+## 监视属性：
 
 1.配置对象watch，用法代码实例。
 
@@ -43,20 +43,20 @@
 				//计算属性
 				info:{
 					handler(newvalue,oldvalue){
-					console.log("example被修改",newvalue,oldvalue);
+					console.log("info被修改",newvalue,oldvalue);
 					}
 				},
 				//监视多级结构中的某个属性的变化
 				'numbers.a':{
 						handler(newvalue,oldvalue){
-                            console.log("example被修改",newvalue,oldvalue);
+                            console.log("numbers.a被修改",newvalue,oldvalue);
                         }
 				},
 				//监视多级结构中的所有属性的变化，需配置deep:true,
 				numbers:{
 						deep:true,
 						handler(newvalue,oldvalue){
-                            console.log("example被修改",newvalue,oldvalue);
+                            console.log("numbers里的属性被修改",newvalue,oldvalue);
                         }
 				},
 			}

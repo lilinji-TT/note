@@ -26,7 +26,7 @@ Vue中有2种数据绑定的方式：
 
 ​                1.双向绑定一般都应用在表单类元素上（如：input、select等）
 
-​                2.v-model:value 可以简写为 v-model，因为v-model默认收集的就是value值，v-bind可以					简写成 ‘ : ’。
+​                2.v-model:value 可以简写为 v-model，因为v-model默认收集的就是value值，v-bind可以简写成 ‘ : ’。
 
 ## C.el和data的2种语法
 

@@ -1,6 +1,6 @@
-# vue02
+# vue计算
 
-### A.计算属性
+### 计算属性
 
 1.在vue中计算属性放在配置选项computed中；
 
@@ -13,16 +13,16 @@
 computed:{
 	example:{
 		get(){
-	
+			return //你要拿来计算的属性
 		},
-		set(){
-		
+		set(val){
+			//此处是你对计算属性的修改
 		}
 	}
 }
 ```
 
-```
+```vue
 //简写（只用不改）
 computed:{
 	//此时example相当于get
