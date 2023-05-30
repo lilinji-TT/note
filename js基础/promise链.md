@@ -62,7 +62,7 @@ promise.then(() => printNum(5))
 
 ```js
 /*
-在上面的第一个代码中，promise.then()执行完以后，返回一个新的promise对象，紧接着调用这个新的promise上的.then()以此类推，有一个等待的关系，下一个的执行shi'ji取决于上一个promise的完成
+在上面的第一个代码中，promise.then()执行完以后，返回一个新的promise对象，紧接着调用这个新的promise上的.then()以此类推，有一个等待的关系，下一个的执行时机取决于上一个promise的完成，而下面这种写法，有着异曲同工之妙。
 */
 promise = promise.then(() => printNum(1))
 promise = promise.then(() => printNum(2))
