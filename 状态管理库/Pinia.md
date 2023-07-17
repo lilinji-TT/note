@@ -121,7 +121,7 @@ const doubleValue = computed(() => store.doubleCount)
 </script>
 ```
 
-### --为了保持提取属性的响应性，我们可以使用storeToRefs()。这将为每一个响应式属性创建一个引用。当我们只是使用store的状态(state)而不调用action时，这是非常有用的。PS：可以直接冲store中结构普action，他们也被绑定到store上
+### --为了保持提取属性的响应性，我们可以使用storeToRefs()。这将为每一个响应式属性创建一个引用。当我们只是使用store的状态(state)而不调用action时，这是非常有用的。PS：可以直接从store中结构普action，他们也被绑定到store上
 
 ```js
 <script setup>
