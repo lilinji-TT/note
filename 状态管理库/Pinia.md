@@ -160,6 +160,6 @@ const useStore = defineStore('storeId', {
 
 TIP：使用vue2时，在state中创建的数据和vue实例中的data遵顼这同样的退则，即state的对象必须是清晰的，当我们像其中添加一个新的属性时，我们需要调用Vue.set()。
 
-### #关于TypeScript
+### 关于TypeScript
 
-### 	--在Pinia中不需要做天多的努力就能让state兼容TS。Pinia会自动推断state的类型，但在特定情况下，需要帮助它一下。
+### 	在Pinia中不需要做天多的努力就能让state兼容TS。Pinia会自动推断state的类型，但在特定情况下，需要帮助它一下。
