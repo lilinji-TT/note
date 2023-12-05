@@ -367,7 +367,7 @@ fiberRootNode.current = rootFiber;
 
 ![workInProgressFiberFinish](https://react.iamkasong.com/img/wipTreeFinish.png)
 
-### 
+
 
 ### update时
 
@@ -454,4 +454,11 @@ function beginWork(
 
 - update时：如果cureent存在，在满足一定条件时可以复用current节点，这样就能克隆current.child作为workInProgress.child，而不需要新建workInProgress.child
 - mount时：除了fiberRootNode以外，current === null。会根据fiber.tag不同，创建不同类型的字Fiber节点
+
+### update时
+
+满足didReceiveUpdate === false，可以直接复用前一次更新的子Fiber，不需要新建子Fiber
+
+1. oldProps === newProps &&  workInpProgress.type === current.type，即props不变与fiber.type不变
+2. !includesSomeLane(renderLanes, updateLanes)，即当前Fiber节点优先级不够
 
